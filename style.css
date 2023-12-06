@@ -474,6 +474,7 @@ overflow: auto;
    justify-content: center;
     /* margin-bottom: 5px; */
     margin-right: 20px;
+
 }
 
 .home{
@@ -486,6 +487,54 @@ overflow: auto;
     align-items: center;
 }
 
+.chips{
+    display: flex;
+    margin-left: 270px;
+    padding: 10px;
+    align-items: center;
+    margin-right: 10px;
+    overflow-x: auto;
+    transition: all 0.3s;
+}
+
+.chips::-webkit-scrollbar{
+   height: 3px;
+}
+
+.chips::-webkit-scrollbar-track {
+    background: #f1f1f100;
+ 
+  }
+  
+
+  .chips::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 50px;
+  }
+
+.chips .chips__item--selected{
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+}
+
+.chips .chips__item{
+    background-color: rgb(36, 36, 36);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.chips__item:hover{
+    background-color: rgb(87, 87, 87);
+}
+
+
+
 /* media */ 
 
 @media only screen and (max-width: 700px) {
@@ -496,7 +545,7 @@ overflow: auto;
         display: block;
     }
 
-  body::-webkit-scrollbar{
+  body::-webkit-scrollbar, .chips::-webkit-scrollbar{
   display: none;
 }
     .head-btn{
@@ -510,6 +559,15 @@ overflow: auto;
         width: 44px;
         border-radius: 50px;
         font-size: 25px;
+    }
+
+    .chips{
+        display: flex;
+        margin-left: 10px;
+        padding: 10px;
+        align-items: center;
+        margin-right: 10px;
+        overflow-x: auto;
     }
 
     .vid-container {
@@ -542,4 +600,3 @@ overflow: auto;
 
    
 }
-
