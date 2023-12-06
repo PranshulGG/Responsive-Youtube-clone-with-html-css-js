@@ -354,12 +354,17 @@ margin-top: 10px;
 }
 
 .line{
-    height: 1.5px;
+    height: 1.5px !important;
     width: 100%;
-    background-color: rgb(104, 103, 103);
+    z-index: 999;
+    background-color: rgb(104, 104, 104);
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.line span{
+    visibility: hidden;
+}
+
 
 .side-nav{
     width: 250px;
