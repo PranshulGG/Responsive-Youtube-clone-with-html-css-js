@@ -533,6 +533,57 @@ overflow: auto;
     background-color: rgb(87, 87, 87);
 }
 
+.bottom_mobile_nav{
+    display: none;
+    position: sticky;
+    background-color: #0F0F0F;
+    bottom: 0;
+
+}
+
+.bottom_nav_content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 15px;
+}
+
+
+
+.bottom_nav_icon_svg{
+    fill: white;
+    width: 27px;
+    height: 27px;
+    margin-bottom: 10px;
+}
+.create_icon_btm{
+    font-weight: 200 !important;
+    position: absolute;
+    margin-bottom: 0;
+    font-size: 45px !important;
+}
+.create_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative ;
+}
+
+.btm_nav_item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 9px;
+    position: relative;
+    cursor: pointer;
+}
+.btm_nav_item p{
+    bottom: 0;
+    position: absolute;
+}
 
 
 /* media */ 
@@ -541,7 +592,7 @@ overflow: auto;
     .search-input, .search, .search_area, .profile, .create, .mic, .sidebar-btn{
         display: none;
     }
-    .search-display, .cast{
+    .search-display, .cast, .bottom_mobile_nav{
         display: block;
     }
 
@@ -597,6 +648,9 @@ overflow: auto;
       .side-nav{
         display: none;
       }
+
+      
+
 
    
 }
