@@ -491,6 +491,9 @@ overflow: auto;
         display: block;
     }
 
+  body::-webkit-scrollbar{
+  display: none;
+}
     .head-btn{
         font-family: 'Material-icons';
         font-weight: 100;
