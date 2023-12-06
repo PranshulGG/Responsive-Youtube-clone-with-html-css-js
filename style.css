@@ -34,6 +34,8 @@ body::-webkit-scrollbar-track {
 *{
     -webkit-tap-highlight-color: transparent;
     font-family: 'Poppins', sans-serif;
+  border-color: rgb(0, 110, 255);
+  outline:rgb(0, 110, 255);
 }
 
 .head_main{
