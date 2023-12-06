@@ -538,7 +538,7 @@ overflow: auto;
     position: sticky;
     background-color: #0F0F0F;
     bottom: 0;
-
+    border-top: 1px solid rgb(77, 77, 77);
 }
 
 .bottom_nav_content{
